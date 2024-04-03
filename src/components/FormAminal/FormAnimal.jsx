@@ -8,7 +8,6 @@ function FormAnimal() {
         generoAnimal: '',
         idadeAnimal: ''
     });
-
     // Função para lidar com a mudança nos campos de entrada
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -41,7 +40,7 @@ function FormAnimal() {
                 console.error('Erro:', error);
             });
     };
-   
+
     return (
         <>
             <form onSubmit={handleSubmit}>
